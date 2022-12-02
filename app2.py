@@ -1,5 +1,5 @@
 import streamlit as st
 
-txt = st.text_area('Enter text: ')
+txt = st.text_area('Введите текст: ')
 
-st.write('The entered text is:',txt)
+st.write('Введенный текст:',txt)
