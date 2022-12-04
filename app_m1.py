@@ -1,3 +1,4 @@
+#Работа с изображением
 import io
 import streamlit as st
 from PIL import Image
@@ -21,7 +22,7 @@ def preprocess_image(img):
 
 
 def load_image():
-    uploaded_file = st.file_uploader(label='Выберите изображение для распознавания')
+    uploaded_file = st.file_uploader(label='Вставьте изображение для распознания')
     if uploaded_file is not None:
         image_data = uploaded_file.getvalue()
         st.image(image_data)
@@ -45,5 +46,5 @@ result = st.button('Распознать изображение')
 if result:
     x = preprocess_image(img)
     preds = model.predict(x)
-    st.write('**Результаты распознавания:**')
+    st.write('**Результат:**')
     print_predictions(preds)
