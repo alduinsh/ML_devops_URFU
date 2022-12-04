@@ -1,4 +1,3 @@
-#Работа с изображением
 import io
 import streamlit as st
 from PIL import Image
