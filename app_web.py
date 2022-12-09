@@ -33,13 +33,13 @@ def load_image():
 def print_predictions(preds):
     classes = decode_predictions(preds, top=3)[0]
     for cl in classes:
-        st.write(cl[1], cl[2], cl[5])
+        st.write(cl[1], cl[2])
 
 
 model = load_model()
 
 
-st.title('Классификации изображений в облаке Streamlit')
+st.title('Новая классификация изображений в облаке Streamlit')
 img = load_image()
 result = st.button('Распознать изображение')
 if result:
