@@ -3,3 +3,5 @@ fastapi
 uvicorn
 transformers
 torch
+streamlit
+tensorflow-cpu
