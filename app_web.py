@@ -31,9 +31,9 @@ def load_image():
 
 
 def print_predictions(preds):
-    classes = decode_predictions(preds, top=3)[0]
+    classes = decode_predictions(preds, top=4)[0]
     for cl in classes:
-        st.write(cl[1], cl[2])
+        st.write(cl[1], cl[2], cl[3])
 
 
 model = load_model()
