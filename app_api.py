@@ -1,7 +1,17 @@
-import streamlit as st
+from fastapi import FastAPI
+from transformers import pipeline
+from pydantic import BaseModel
 
-st.title('New text app')
+class Item(BaseModel):
+    text: str
 
-txt = st.text_area('Введите текст: ')
+app = FastAPI()
+classifier = pipeline("text-classification", model="SkolkovoInstitute/russian_toxicity_classifier")
 
-st.write('Введенный текст:',txt)
+@app.get("/")
+def root():
+    return {"message": "Hello World"}
+
+@app.post("/predict/")
+def predict(item: Item):
+    return classifier(item.text)[0]
