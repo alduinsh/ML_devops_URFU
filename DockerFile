@@ -2,5 +2,6 @@ FROM python
 EXPOSE 8501
 WORKDIR /app
 COPY requirements.txt ./requarements.txt
+RUN pip3 install -r requaments.txt
 COPY . .
 CMD streamlit run app_web.py
