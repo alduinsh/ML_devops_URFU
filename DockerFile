@@ -3,4 +3,4 @@ EXPOSE 8501
 WORKDIR /app
 COPY requirements.txt ./requarements.txt
 COPY . .
-CMD streamlit run image_classification.py
+CMD streamlit run app_web.py
