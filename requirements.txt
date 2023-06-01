@@ -8,6 +8,7 @@
 # pydantic~=1.10.7
 # numpy~=1.22
 # Pillow~=9.4.0
+python==3.10.8
 httpx
 fastapi
 uvicorn
