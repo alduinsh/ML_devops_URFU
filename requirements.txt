@@ -8,10 +8,14 @@
 # pydantic~=1.10.7
 # numpy~=1.22
 # Pillow~=9.4.0
-httpx
-fastapi
-uvicorn
-transformers
-torch
+
+# httpx
+# fastapi
+# uvicorn
+# transformers
+# torch
+# streamlit
+# tensorflow-cpu-aws
+
 streamlit
 tensorflow-cpu-aws
