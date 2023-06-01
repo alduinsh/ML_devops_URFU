@@ -1,18 +1,10 @@
-# httpx
-# fastapi~=0.95.0
-# uvicorn
-# transformers~=4.27.3
-# torch
-# streamlit~=1.20.0
-# tensorflow-cpu-aws
-# pydantic~=1.10.7
-# numpy~=1.22
-# Pillow~=9.4.0
-python==3.10.8
 httpx
-fastapi
+fastapi~=0.95.0
 uvicorn
-transformers
+transformers~=4.27.3
 torch
-streamlit
+streamlit~=1.20.0
 tensorflow-cpu-aws
+pydantic~=1.10.7
+numpy~=1.22
+Pillow~=9.4.0
