@@ -14,4 +14,4 @@ uvicorn
 transformers
 torch
 streamlit
-tensorflow-cpu
+tensorflow-cpu-aws
